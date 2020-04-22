@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+body{
+    background-color:#e9ebee;
+}
 .signUpAs a{
     border:1px solid rgba(0, 0, 0, 0.356);
 }
@@ -57,6 +60,8 @@ form input:focus{
     text-align: center;
     height: 10vh;
     display:flex;
+    justify-content: space-between;
+    color:white;
 }
 .Nav a{
     font-size: 1em;
@@ -121,8 +126,8 @@ form input:focus{
     margin:10%;
 }
 #register-client{
-    background-color:#e26b6b;
-    color:white;
+    /* background-color:#e26b6b;
+    color:white; */
     border-radius: 1em;
 }
 #register-instructor{
@@ -154,6 +159,7 @@ form input:focus{
 }
 
 
+
 .anywhere{
     width:50%;
     height: 45vh;
@@ -179,8 +185,8 @@ form input:focus{
 }
 #login-client{
     border-radius: 1em;
-    background-color:rgb(226, 107, 107);
-    color:white;
+    /* background-color:rgb(226, 107, 107);
+    color:white; */
 }
 #login-instructor{
     border-radius: 1em;
@@ -247,4 +253,131 @@ form input:focus{
     color:white;
     background-color: #000000bd;
     width:100%;
+}
+
+.errorMessage{
+    color:red;
+}
+button{
+    outline: none;
+}
+.classes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color:white;
+    border-radius: 15px;
+    margin:0% 2% 5% 3%;
+    width:75%;
+}
+.classes h1{
+    text-align: center;
+    width:100%;
+}
+.classCard{
+    background-color:rgb(197, 197, 231);
+    margin:2% 0% 2% 2.5%;
+}
+
+.mainFrame{
+    background-color: white;
+    text-align: center;
+    margin: 5% 2% 2% 3%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px rgba(180, 180, 180, 0.479) solid;
+    width: 75%;
+    height: 27vh;
+}
+
+
+.profileImage{
+    width:11em;
+    height: 20vh;
+    background-image: url("./resources//profileTemperaryImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 150px;
+    margin: 2% 1% 2% 2%;
+}
+
+
+.profileInfo{
+    margin:5% 5% 5% 5%;
+    width:62.5%;
+}
+.profileNav{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 5% 2% 2% 0%;
+    border-bottom: 1px solid rgb(175, 172, 172);
+    width: 25%;
+    height: 27vh;
+}
+.profileNav a{
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align:left;
+    color: black;
+    padding: 1% 3.5% 1% 3.5%;
+    margin: 0% 5% 0% 10%;
+    border-radius: 15px;
+    font-weight: 500;
+
+}
+.profileNav a:hover{
+    color:#66bfff;
+}
+.profileLogo{
+    display:flex;
+    font-size: 3em;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.profileContent{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.profile{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.class_content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-color:white;
+    border-radius: 15px;
+    margin:0% 2% 5% 3%;
+}
+.quotes{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 0% 2% 2% 0%;
+    border-bottom: 1px solid rgb(175, 172, 172);
+    width: 25%;
+    height: 40vh;
+    text-align: center;
+}
+.quotes h1{
+    padding:7% 0% 5% 0%;
+}
+.quotes p{
+    font-size: 1.2em;
+    margin: 1% 4.2% 1% 4.2%;
+}
+.saidBy{
+    text-align: right;
 }

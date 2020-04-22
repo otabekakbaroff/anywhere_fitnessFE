@@ -1,29 +1,46 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import axiosWithAuth from '../../components/SingleComponents/axiosWithAuth'
 
+
 function ClientLogin(props){
+    useEffect(() => {
+        let client = document.getElementById('login-client');
+        let instructor = document.getElementById('login-instructor');
+        client.style.backgroundColor="#e26b6b";
+        client.style.color="white";
+        instructor.style.backgroundColor="white";
+        instructor.style.color="black";
+    },[]);
     const [login,setLogin]=useState({
         username:'',
         password:''
     });
+    const [errorMessage,setErrorMessage]=useState('');
+
     const handleChange=e=>{
+      console.log(login);
       setLogin({
           ...login,
           [e.target.name]:e.target.value
       }) 
     }
+
     const LoginSubmit=e=>{
       e.preventDefault();
       axiosWithAuth().post('/api/auth/client/login', login)
       .then(response=>{
           console.log(response);
           localStorage.setItem('token',response.data.token);
-          props.history.push("/profile");
+          localStorage.setItem('id',response.data.id);
+          localStorage.setItem('name',response.data.Welcome);
+          localStorage.setItem('lastname',response.data.lastname);
+          localStorage.setItem('contactInfo',response.data.contactInfo);
+          localStorage.setItem('status', 'client');
+          props.history.push("/profile/classes");
           window.location.reload(true);
       })
       .catch(err=>{
-          console.log(err);
-          window.location.reload(true);
+          setErrorMessage('Check Your Credentials')
       })
     }
     return(
@@ -35,7 +52,11 @@ function ClientLogin(props){
 
                 <input placeholder=" password" name="password" type="password" onChange={handleChange} id="password"/>
 
-                <button type="submit">Submit</button>
+                <div  className="errorMessage">{errorMessage}</div>
+
+                <button type="submit">Log In</button>
+
+                <div>Don't Have an account? register <a href="http://localhost:3000/register/client">here</a></div>
             </form>
         </div>
     )
