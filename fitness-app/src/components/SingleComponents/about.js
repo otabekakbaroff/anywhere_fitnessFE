@@ -2,9 +2,17 @@ import React from 'react'
 import Navbar from './header';
 function Contact(){
     return(
-        <div>
+        <div className="about">
             <Navbar/>
-            <h1>About Page</h1>
+            <section>
+                <h1>About Us</h1>
+                <p>• Welcome to anywhere fitness, our app gives you freedom you need.</p>
+                <p>♦ You can chose your instructors</p>
+                <p>☻ You can chose the time</p>
+                <p>♥ You can chose the location</p>
+                <p>☺ Simple and easy Registration process</p>
+                <p>♠ What are you waiting for? Join us today!</p>
+            </section>
         </div>
     )
 }

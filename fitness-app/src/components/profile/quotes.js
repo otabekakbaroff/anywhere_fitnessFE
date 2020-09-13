@@ -7,10 +7,13 @@ function Quotes(){
         let d = new Date();
         let n = d.getDay();
         GenerateQuote(n);
-        console.log(n)
     },[])
     function GenerateQuote(date){
         switch(date) {
+            case 0:
+              setQuote("Don't wait for Monday, Today is the day!!!")
+              setQuoteAuther("-From us to You!😉");
+            break;
             case 1:
               setQuote("With the new day comes new strength and new thoughts.")
               setQuoteAuther("-Eleanor Roosevelt");
@@ -34,10 +37,6 @@ function Quotes(){
             case 6:
                 setQuote("If you can't fly,then run, if you can't run then walk, if you can't walk, then crawl, but whatever you do, keep moving forward")
                 setQuoteAuther("-Martin Luther King Jr.");
-              break;
-            case 7:
-                setQuote("Don't wait for Monday, Today is the day!!!")
-                setQuoteAuther("-From Us to You!😉");
               break;
             default:
               setQuote('Sorry, No Quote Today :(');
