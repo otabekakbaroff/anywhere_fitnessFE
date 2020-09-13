@@ -18,7 +18,6 @@ function ClientLogin(props){
     const [errorMessage,setErrorMessage]=useState('');
 
     const handleChange=e=>{
-      console.log(login);
       setLogin({
           ...login,
           [e.target.name]:e.target.value

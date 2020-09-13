@@ -17,17 +17,6 @@ function initializeAnalytics(){
   ReactGA.pageview('/HomePage')
 }
 
-
-// ReactGA.set({
-//   // userId: auth.currentUserId(),
-//   // any data that is relevant to the user session
-//   // that you would like to track with google analytics
-// })
-// ReactGA.event({
-//   category: "Sign Up",
-//   action: "User pressed the big blue sign up button",
-// });
-
 const history = createBrowserHistory();
 
 

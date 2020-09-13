@@ -20,8 +20,8 @@ function InstructorRegister(props){
         setSignup({
           ...signup,
           [e.target.name]:e.target.value
-      }) 
-      console.log(signup);
+      })
+      console.log(signup) 
     }
     const [errorMessage,setErrorMessage]=useState('');
     const validation=e=>{
