@@ -43,6 +43,7 @@ form input{
     border-bottom: 0.15em solid black;
     outline:none;
     width:100%;
+    font-size: 25px;
 }
 form button{
     background-color:rgb(30, 167, 252);
@@ -95,8 +96,8 @@ form input:focus{
 }
 .clientSignup{
     background-color: rgb(255, 255, 255);
-    height: 65vh;
-    width: 25em;
+    height: 1000px;
+    width: 500px;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -392,10 +393,16 @@ button{
     text-align: center;
     font-size: 2em;
     background-color:#00000081;
-    border-radius: 50%;
+    border-radius: 100px;
     margin:3% 15% 5% 15%;
     padding:2%;
 }
+.about section p{
+    margin: 10px;
+}
+
 .about section h1{
     font-size: 4em;
 }
+
+
