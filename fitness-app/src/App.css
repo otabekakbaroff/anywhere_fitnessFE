@@ -2,6 +2,143 @@
     margin:0;
     padding:0;
 }
+
+@media only screen and  (min-width:0px){
+    .nav{
+        background-color:#000000;
+        top:0;
+        position: fixed;
+        width:100%;
+        height: 120px;
+        display:flex;
+        align-items: center;
+      }
+      .nav .anchor-tags{
+        display:flex;
+        justify-content: space-around;
+        width:100%;
+      }
+      .nav .anchor-tags a{
+        color: rgb(255, 255, 255);
+        font-size:1.3em;
+
+        text-decoration: none;
+        border-radius: 2px;
+        text-align: center;
+      }
+      .nav .anchor-tags a:hover{
+          background-color:rgb(27, 27, 27);
+      }
+      .HomePageImgs{
+        display:flex;
+        margin-top:120px;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100%;
+       }
+
+      .middleImg{
+          width: 100%;
+          height: 35vh;
+          background-image: url("./resources/bruce-mars-HHXdPG_eTIQ-unsplash.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          display:flex;
+          justify-content: center;
+          align-items: center;   
+      }
+      .chose{
+        width:100%;
+        height: 50vh;
+        background-image: url("./resources/two-woman-doing-exercise-1671217.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .workout{
+        width:100%;
+        height: 50vh;
+        background-image: url("./resources/woman-wearing-black-bra-and-pants-on-top-of-the-mountain-963697.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .anywhere{
+        width:100%;
+        height: 50vh;
+        background-image: url("./resources/geert-pieters-3RnkZpDqsEI-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .anytime{
+        width:100%;
+        height: 45vh;
+        background-image: url("./resources/inspired-horizons-digital-marketing-I749-lKHHJ4-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size: 27px;
+    }
+    .workout p{
+        text-align: center;
+        font-size:27px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff9e;
+        border-radius: 50px;
+        width: 65%;
+    }
+    .anytime p{
+        text-align: center;
+        font-size:27px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff9e;
+        border-radius: 50px;
+        width: 65%;
+    }
+    .anywhere p{
+        text-align: center;
+        font-size:27px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff9e;
+        border-radius: 50px;
+        width: 65%;
+    }
+    .chose p{
+        text-align: center;
+        font-size:27px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff9e;
+        border-radius: 50px;
+        width: 65%;
+    }
+    .middleImg p{
+        text-align: center;
+        font-size:27px;
+        color:white;
+        background-color: #000000bd;
+        width:100%;
+    }
+}
+
+
+
 body{
     background-color:#e9ebee;
 }
@@ -13,7 +150,7 @@ body{
     text-align: center;
 }
 .login{
-    height: 90vh;
+    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -56,31 +193,8 @@ form input:focus{
     transition:  border-bottom .35s ease-in-out;
 }
 
-.Nav{
-    background-color:rgba(0, 0, 0, 0.945);
-    text-align: center;
-    height: 10vh;
-    display:flex;
-    justify-content: space-between;
-    color:white;
-}
-.Nav a{
-    font-size: 1em;
-    color:white;
-    text-decoration: none;
-    width:25%;
-    padding:2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Nav a:hover{
-    background-color:rgb(29, 28, 28);
-    border-radius: 15px;
-}
-
 .signup{
-    height: 90vh;
+    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -127,63 +241,12 @@ form input:focus{
     margin:10%;
 }
 #register-client{
-    /* background-color:#e26b6b;
-    color:white; */
     border-radius: 1em;
 }
 #register-instructor{
     border-radius: 1em;
 }
-.chose{
-    width:50%;
-    height: 45vh;
-    background-image: url("./resources/two-woman-doing-exercise-1671217.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 
-
-.workout{
-    width:50%;
-    height: 45vh;
-    background-image: url("./resources/woman-wearing-black-bra-and-pants-on-top-of-the-mountain-963697.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.anywhere{
-    width:50%;
-    height: 45vh;
-    background-image: url("./resources/geert-pieters-3RnkZpDqsEI-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.anytime{
-    width:50%;
-    height: 45vh;
-    background-image: url("./resources/inspired-horizons-digital-marketing-I749-lKHHJ4-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 #login-client{
     border-radius: 1em;
     /* background-color:rgb(226, 107, 107);
@@ -192,69 +255,8 @@ form input:focus{
 #login-instructor{
     border-radius: 1em;
 }
-.middleImg{
-    position:absolute;
-    width: 35%;
-    height: 35vh;
-    /* background-color: black; */
-    top: 36%;
-    left: 28%;
-    background-image: url("./resources/bruce-mars-HHXdPG_eTIQ-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.HomePageImgs{
-    display:flex;
-    flex-wrap: wrap;
-    height: 84.4vh;
-    width: 100%;
-}
 
 
-.workout p{
-    text-align: center;
-    font-size:2.5em;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff9e;
-    border-radius: 50px;
-    width: 65%;
-}
-.anytime p{
-    text-align: center;
-    font-size:2.5em;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff9e;
-    border-radius: 50px;
-    width: 65%;
-}
-.anywhere p{
-    text-align: center;
-    font-size:2.5em;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff9e;
-    border-radius: 50px;
-    width: 65%;
-}
-.chose p{
-    text-align: center;
-    font-size:2.5em;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff9e;
-    border-radius: 50px;
-    width: 65%;
-}
-.middleImg p{
-    text-align: center;
-    font-size:2.5em;
-    color:white;
-    background-color: #000000bd;
-    width:100%;
-}
 
 .errorMessage{
     color:red;
@@ -406,3 +408,59 @@ button{
 }
 
 
+
+
+@media only screen and (max-width:849px){
+    #sandwich{
+      position: fixed;
+      margin: 25px 15px 0px 0px;
+      top:0;
+      right:0;
+      width:50px;
+      height: 50px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #sandwich div{
+      width:40px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin:7% 5% 7% 5%;
+    }
+    .nav .close{
+      display:none;
+    }
+    .nav .open{
+      display:block;
+      background-color:black;
+      width:100%;
+      font-size: 1.2rem;
+    }
+    .nav{
+      display:block;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .nav .open{
+      padding: 40px 0px;
+    }
+    .nav .anchor-tags{
+      flex-direction: column;
+    }
+    .nav .anchor-tags a{
+      width:100%;
+    }
+    #sign-up{
+      background-color:white;
+      color:rgb(95 184 32);
+      border-radius: 0;
+    }
+    .logo{
+      justify-content: center;
+      width:100%;
+    }
+}
