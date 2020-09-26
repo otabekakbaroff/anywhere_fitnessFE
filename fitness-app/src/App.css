@@ -188,7 +188,7 @@
     }
 
     .signup{
-        height: 90vh;
+        height: 1200px;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -199,7 +199,7 @@
         background-size: cover;
     }
     .signupPage{
-        height:90vh;
+        height: 1200px;
         width:100%;
         margin-top: 120px;
     }
@@ -231,7 +231,7 @@
         margin: 5% 0% 5% 0%;
     }
     .signUpAs a{
-        font-size: 1.5em;
+        font-size: 24px;
         color:black;
         padding: 0px 15px;
         text-decoration: none;
@@ -413,17 +413,11 @@
     form button{
         margin:5%;
     }
-}
-/* @media only screen and (min-width:600px){
-    .clientSignup{
-        width:550px;
+    .signUpAs a{
+        font-size: 28px;
+
     }
 }
-@media only screen and (min-width:700px){
-    .clientSignup{
-        width:650px;
-    }
-} */
 
 
 @media only screen and (min-width: 800px){
