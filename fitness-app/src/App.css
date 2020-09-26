@@ -180,6 +180,7 @@
         margin:10%;
         border-radius:15px;
         width:215px;
+        font-size: 20px;
         height: 50px;
     }
     form input:focus{
@@ -227,7 +228,7 @@
         width:100%;
         display:flex;
         justify-content: space-around;
-        height: 5vh;
+        height: 55px;
         margin: 5% 0% 5% 0%;
     }
     .signUpAs a{
