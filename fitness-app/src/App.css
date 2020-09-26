@@ -21,9 +21,7 @@
       .nav .anchor-tags a{
         color: rgb(255, 255, 255);
         font-size:1.3em;
-
         text-decoration: none;
-        border-radius: 2px;
         text-align: center;
       }
       .nav .anchor-tags a:hover{
@@ -98,39 +96,39 @@
     }
     .workout p{
         text-align: center;
-        font-size:27px;
+        font-size:35px;
         color: rgb(0, 0, 0);
         background-color: #ffffff9e;
         border-radius: 50px;
-        width: 65%;
+        width: 90%;
     }
     .anytime p{
         text-align: center;
-        font-size:27px;
+        font-size:35px;
         color: rgb(0, 0, 0);
         background-color: #ffffff9e;
         border-radius: 50px;
-        width: 65%;
+        width: 90%;
     }
     .anywhere p{
         text-align: center;
-        font-size:27px;
+        font-size:35px;
         color: rgb(0, 0, 0);
         background-color: #ffffff9e;
         border-radius: 50px;
-        width: 65%;
+        width: 90%;
     }
     .chose p{
         text-align: center;
-        font-size:27px;
+        font-size: 35px;
         color: rgb(0, 0, 0);
         background-color: #ffffff9e;
         border-radius: 50px;
-        width: 65%;
+        width: 90%;
     }
     .middleImg p{
         text-align: center;
-        font-size:27px;
+        font-size:35px;
         color:white;
         background-color: #000000bd;
         width:100%;
