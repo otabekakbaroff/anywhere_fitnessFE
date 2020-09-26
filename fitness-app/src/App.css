@@ -381,21 +381,20 @@
         background-image: url("./resources/person-riding-bicycle-1277034.jpg");
         background-position: center;
         background-size: cover;
+        margin-top: 120px;
     }
     .about section{
         color:white;
         text-align: center;
-        font-size: 2em;
         background-color:#00000081;
-        border-radius: 100px;
-        margin:3% 15% 5% 15%;
         padding:2%;
     }
     .about section p{
         margin: 10px;
+        font-size: 24px;
     }
     .about section h1{
-        font-size: 4em;
+        font-size: 45px;
     }
 }
 
@@ -411,6 +410,15 @@
     }
     .anywhere{
         width: 50%;
+    }
+}
+@media only screen and (min-width:850px){
+    .nav .anchor-tags a{
+        padding: 45px 50px;
+        width: 25%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (min-width:1400px){
