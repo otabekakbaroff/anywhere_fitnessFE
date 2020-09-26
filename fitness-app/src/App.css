@@ -399,11 +399,17 @@
     .about section h1{
         font-size: 45px;
     }
+    #login-form{
+        height: 550px;
+    }
 }
 @media only screen and (min-width:400px){
     .clientSignup{
         width:350px;
         height:875px;
+    }
+    #login-form{
+        height: 600px;
     }
 }
 @media only screen and (min-width:500px){
@@ -416,7 +422,9 @@
     }
     .signUpAs a{
         font-size: 28px;
-
+    }
+    #login-form{
+        height: 650px;
     }
 }
 

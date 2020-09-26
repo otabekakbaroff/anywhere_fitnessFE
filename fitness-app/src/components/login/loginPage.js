@@ -25,7 +25,7 @@ function LoginPage(){
              <Navbar/>
              <div className="login">
             <Router>
-            <div className="clientSignup">
+            <div className="clientSignup" id="login-form">
             <h1 className="logo">Anywhere Fitness</h1>
             <div className="signUpAs">
                 <Link onClick={ClientFocus} id="login-client" to="/login/client">Client</Link>
