@@ -154,33 +154,33 @@
         background-position: center;
         background-size: cover;
     }
-    .clientRegister{
-        width:70%;
+    .clientRegister h2,.instructorRegister h2{
         text-align: center;
+        font-size: 27px;
     }
-    .instructorRegister{
-        width:70%;
-        text-align: center;
-    }
+
 
     form {
         display:flex;
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
+        width:100%;
     }
     form input{
-        margin:10% 0% 10% 0%;
+        margin:10% 0%;
         border:0;
         border-bottom: 0.15em solid black;
         outline:none;
-        width:100%;
-        font-size: 25px;
+        width:90%;
+        font-size: 20px;
     }
     form button{
         background-color:rgb(30, 167, 252);
-        margin:10% 10% 0% 10%;
+        margin:10%;
         border-radius:15px;
-        height: 5vh;
+        width:215px;
+        height: 50px;
     }
     form input:focus{
         border-bottom: 0.15em solid rgb(0, 119, 255);
@@ -188,7 +188,7 @@
     }
 
     .signup{
-        height: 100vh;
+        height: 90vh;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -199,15 +199,15 @@
         background-size: cover;
     }
     .signupPage{
-        height:100vh;
+        height:90vh;
         width:100%;
+        margin-top: 120px;
     }
     .clientSignup{
         background-color: rgb(255, 255, 255);
-        height: 1000px;
-        width: 500px;
+        height: 800px;
+        width: 290px;
         display:flex;
-        align-items: center;
         flex-direction: column;
         border-radius: 10px;
     }
@@ -219,20 +219,25 @@
         margin-bottom: 5%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        font-size: 32px;
+        padding: 15px 0px;
     }
 
     .signUpAs{
         width:100%;
-        text-align: center;
+        display:flex;
+        justify-content: space-around;
         height: 5vh;
         margin: 5% 0% 5% 0%;
     }
     .signUpAs a{
         font-size: 1.5em;
         color:black;
-        padding: 1% 3.5% 1% 3.5%;
+        padding: 0px 15px;
         text-decoration: none;
-        margin:10%;
+        display:flex;
+        align-items: center;
+        margin: 7px 0px;
     }
     #register-client{
         border-radius: 1em;
@@ -247,9 +252,6 @@
     #login-instructor{
         border-radius: 1em;
     }
-
-
-
     .errorMessage{
         color:red;
     }
@@ -397,6 +399,32 @@
         font-size: 45px;
     }
 }
+@media only screen and (min-width:400px){
+    .clientSignup{
+        width:350px;
+        height:875px;
+    }
+}
+@media only screen and (min-width:500px){
+    .clientSignup{
+        width:450px;
+        height: 975px;
+    }
+    form button{
+        margin:5%;
+    }
+}
+/* @media only screen and (min-width:600px){
+    .clientSignup{
+        width:550px;
+    }
+}
+@media only screen and (min-width:700px){
+    .clientSignup{
+        width:650px;
+    }
+} */
+
 
 @media only screen and (min-width: 800px){
     .workout{
@@ -497,6 +525,5 @@
     }
     .logo{
       justify-content: center;
-      width:100%;
     }
 }
