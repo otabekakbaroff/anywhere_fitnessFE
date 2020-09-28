@@ -9,7 +9,7 @@
         top:0;
         position: fixed;
         width:100%;
-        height: 120px;
+        height: 100px;
         display:flex;
         align-items: center;
       }
@@ -29,7 +29,7 @@
       }
       .HomePageImgs{
         display:flex;
-        margin-top:120px;
+        margin-top: 100px;
         flex-wrap: wrap;
         height: 100vh;
         width: 100%;
@@ -202,7 +202,7 @@
     .signupPage{
         height: 1200px;
         width:100%;
-        margin-top: 120px;
+        margin-top: 100px;
     }
     .clientSignup{
         background-color: rgb(255, 255, 255);
@@ -386,7 +386,7 @@
         background-image: url("./resources/person-riding-bicycle-1277034.jpg");
         background-position: center;
         background-size: cover;
-        margin-top: 120px;
+        margin-top: 100px;
     }
     .about section{
         color:white;
@@ -447,7 +447,7 @@
 }
 @media only screen and (min-width:850px){
     .nav .anchor-tags a{
-        padding: 45px 50px;
+        padding: 35px 50px;
         width: 25%;
         display:flex;
         justify-content: center;
@@ -466,10 +466,10 @@
         left:32%;
     }
     .chose{
-        height: 45vh;
+        height: 47vh;
     }
     .workout{
-        height: 45vh;
+        height: 47vh;
     }
     .anytime{
         height: 45vh;
