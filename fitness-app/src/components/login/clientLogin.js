@@ -34,6 +34,7 @@ function ClientLogin(props){
           localStorage.setItem('name',response.data.Welcome);
           localStorage.setItem('lastname',response.data.lastname);
           localStorage.setItem('contactInfo',response.data.contactInfo);
+          localStorage.setItem('id',response.data.id)
           localStorage.setItem('status', 'client');
           props.history.push("/profile/classes");
           window.location.reload(true);

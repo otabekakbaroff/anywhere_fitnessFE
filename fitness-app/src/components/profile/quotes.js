@@ -11,7 +11,7 @@ function Quotes(){
     function GenerateQuote(date){
         switch(date) {
             case 0:
-              setQuote("Don't wait for Monday, Today is the day!!!")
+              setQuote("Don't wait for Monday, Today is your day!!!")
               setQuoteAuther("-From us to You!😉");
             break;
             case 1:
@@ -42,7 +42,6 @@ function Quotes(){
               setQuote('Sorry, No Quote Today :(');
           }
     }
-    console.log(quote);
     return(
         <div className="quotes">
             <h1>Quote of the day</h1>

@@ -4,7 +4,11 @@ function AllClasses(){
     const [classes,setClasses]=useState([]);
     useEffect(()=>{
         axiosWithAuth().get('/api/classes').then(res=>{
-            console.log(res.data);
+            let result = res.data.map(cs=>{
+                console.log(cs)
+                return cs
+            })
+            console.log(result)
             setClasses(res.data);
         })
     },[])

@@ -39,10 +39,8 @@ function InstructorRegister(props){
             localStorage.setItem('token',response.data.token);
             localStorage.setItem('firstname',signup.firstname);
             localStorage.setItem('lastname',signup.lastname);
+            localStorage.setItem('title',signup.status)
             localStorage.setItem('status', 'instructor');
-            axiosWithAuth().get("/api/instructors").then(res=>{
-                localStorage.setItem('id',res.data.length);
-            })
             props.history.push("/profile");
             window.location.reload(true);
         })

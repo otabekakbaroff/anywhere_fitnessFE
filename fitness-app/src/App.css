@@ -144,7 +144,7 @@
         text-align: center;
     }
     .login{
-        height: 100vh;
+        height: 1200px;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -292,9 +292,9 @@
 
 
     .profileImage{
-        width:11em;
-        height: 20vh;
-        background-image: url("./resources//profileTemperaryImg.jpg");
+        width:200px;
+        height: 200px;
+        background-image: url("./resources/profileDefault.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -338,6 +338,8 @@
         width:100%;
         justify-content: center;
         align-items: center;
+        background-color: #000000;
+        color:white;
     }
     .profileContent{
         display:flex;

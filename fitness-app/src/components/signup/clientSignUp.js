@@ -38,9 +38,6 @@ function ClientRegister(props){
             localStorage.setItem('firstname',signup.firstname);
             localStorage.setItem('lastname',signup.lastname);
             localStorage.setItem('status', 'client');
-            axiosWithAuth().get("/api/clients").then(res=>{
-                localStorage.setItem('id',res.data.length)
-            })
             props.history.push("/profile");
             window.location.reload(true)
         })

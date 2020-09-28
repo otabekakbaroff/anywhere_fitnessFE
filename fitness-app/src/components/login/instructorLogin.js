@@ -31,6 +31,7 @@ function InstructorLogin(props){
           localStorage.setItem('firstname',response.data.Welcome);
           localStorage.setItem('lastname',response.data.lastname);
           localStorage.setItem('contactInfo',response.data.contactInfo);
+          localStorage.setItem('id',response.data.id)
           localStorage.setItem('title',response.data.status);
           localStorage.setItem('status', 'instructor');
           props.history.push("/profile/classes");

@@ -21,9 +21,8 @@ function Profile(){
                     <h1>Welcome {localStorage.getItem('firstname')}</h1>
                     <div>
                         <h4>Class Count: 2</h4>
-                        <h4>Student Count: 50</h4>
-                        <h4>Profession: Dancing Instructor</h4>
-                        <h4>click to Edit Profile</h4>
+                        <h4>Account Status: {localStorage.getItem("status")}</h4>
+                        <h4>Profession: {localStorage.getItem("title")}</h4>
                     </div>
                 </div>
             </div>
