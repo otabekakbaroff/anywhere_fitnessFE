@@ -1,3 +1,7 @@
+### Welcome to anywhere fitness app
+
+##### You can check out live site here: https://anywherefitnessfe.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
