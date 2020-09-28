@@ -1,9 +1,9 @@
 import React from 'react';
-function myclasses(){
+function Myclasses(){
     return(
         <div>
             <h1>Messages</h1>
         </div>
     )
 }
-export default myclasses;
+export default Myclasses;

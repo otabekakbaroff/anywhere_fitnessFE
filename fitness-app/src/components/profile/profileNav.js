@@ -5,15 +5,23 @@ function profileNav(){
         localStorage.clear();
         window.location.reload(true)
     }
-    return(
-        <div className="profileNav">
-            <Link to="/profile/classes">View Classes</Link>
-            <Link to="/profile/myclasses">My Classes</Link>
-            <Link to="/profile/createclasses">Create a Class</Link>
-            <Link to="/profile/discussions">Discussions</Link>
-            <Link to="/profile/directmessages">Messages</Link>
-            <Link onClick={logout} to="/">Log out</Link>
-        </div>
-    )
+    if(localStorage.getItem("status") === "instructor"){
+        return(
+            <div className="profileNav">
+                <Link to="/profile/classes">View Classes</Link>
+                <Link to="/profile/myclasses">My Classes</Link>
+                <Link to="/profile/createclasses">Create a Class</Link>
+                <Link onClick={logout} to="/">Log out</Link>
+            </div>
+        )
+    }else{
+        return(
+            <div className="profileNav">
+                <Link to="/profile/classes">View Classes</Link>
+                <Link to="/profile/myclasses">My Classes</Link>
+                <Link onClick={logout} to="/">Log out</Link>
+            </div>
+        )
+    }
 }
 export default profileNav;

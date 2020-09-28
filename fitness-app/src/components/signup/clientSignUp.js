@@ -38,8 +38,12 @@ function ClientRegister(props){
             localStorage.setItem('firstname',signup.firstname);
             localStorage.setItem('lastname',signup.lastname);
             localStorage.setItem('status', 'client');
-            props.history.push("/profile");
-            window.location.reload(true)
+            axiosWithAuth().get('/api/clients').then(res=>{
+                console.log(res)
+                localStorage.setItem('id', res.data[res.data.length-1].id)
+            })
+            props.history.push("/profile/classes");
+            // window.location.reload(true)
         })
         .catch(err=>{
             console.log(err);

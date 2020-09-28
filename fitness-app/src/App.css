@@ -175,7 +175,7 @@
         width:90%;
         font-size: 20px;
     }
-    form button{
+    button{
         background-color:rgb(30, 167, 252);
         margin:10%;
         border-radius:15px;
@@ -276,6 +276,9 @@
     .classCard{
         background-color:rgb(197, 197, 231);
         margin:2% 0% 2% 2.5%;
+        padding:5%;
+        border-radius: 5%;
+
     }
 
     .mainFrame{
@@ -404,6 +407,14 @@
     #login-form{
         height: 550px;
     }
+    .stats{
+        display:flex;
+        justify-content: center;
+    }
+    .stats div{
+        margin:5%;
+        border: 1px solid black;
+    }
 }
 @media only screen and (min-width:400px){
     .clientSignup{
@@ -431,6 +442,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 800px){
     .workout{
         width:50%;
@@ -454,6 +467,82 @@
         align-items: center;
     }
 }
+@media only screen and (max-width:1200px){
+    .profileInfo{
+        width: 58%;
+    }
+}
+@media only screen and (max-width:920px){
+    .profileInfo{
+        margin: 5% 0% 5% 5%;
+        width: 55.5%;
+    }
+}
+@media only screen and (max-width:660px){
+    .profileInfo{
+        margin: 5% 0% 5% 5%;
+        width: 45%;
+    }
+    p{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:530px){
+    .profileInfo{
+        margin: 5% 0% 5% 5%;
+        width: 45%;
+    }
+    p{
+        font-size:17px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:1000px){
+    .profileContent{
+        flex-direction: column-reverse;
+    }
+    .profileNav{
+        width:90%;
+        margin:5% 5% 0% 5%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    .mainFrame{
+        width:90%;
+        margin:5%;
+        height: 300px;
+    }
+    .classes{
+        width:90%;
+        margin: 0% 5% 5% 5%;
+    }
+    .quotes{
+        width:90%;
+        margin: 0% 5% 5% 5%;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .mainFrame{
+        height: 500px;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profileInfo{
+        width:80%;
+    }
+}
+
+
+
 @media only screen and (min-width:1400px){
     .HomePageImgs{
         height: 80vh;

@@ -35,9 +35,14 @@ function InstructorLogin(props){
           localStorage.setItem('title',response.data.status);
           localStorage.setItem('status', 'instructor');
           props.history.push("/profile/classes");
+          axiosWithAuth().get('/api/instructors').then(res=>{
+            console.log(res)
+            localStorage.setItem('id', res.data[res.data.length-1].id)
+        })
           window.location.reload(true);
       })
       .catch(err=>{
+        console.log(err)
         setErrorMessage('Check Your Credentials')
       })
     }

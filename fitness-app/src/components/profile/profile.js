@@ -1,10 +1,10 @@
 import React from 'react';
 import ProfileNav from "./profileNav"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import createclass from './createclass';
-import discussions from './discussions';
-import messages from './messages';
-import myclasses from './myclasses';
+import Createclass from './createclass';
+import Discussions from './discussions';
+import Messages from './messages';
+import Myclasses from './myclasses';
 import AllClasses from './allClasses';
 import Quotes from './quotes';
 function Profile(){
@@ -19,10 +19,15 @@ function Profile(){
                 <div className="profileImage"></div>
                 <div className="profileInfo">
                     <h1>Welcome {localStorage.getItem('firstname')}</h1>
-                    <div>
-                        <h4>Class Count: 2</h4>
-                        <h4>Account Status: {localStorage.getItem("status")}</h4>
-                        <h4>Profession: {localStorage.getItem("title")}</h4>
+                    <div className="stats">
+                        <div>
+                            <p>Signed Up Classes</p>
+                            <p>10</p>
+                        </div>
+                        <div>    
+                            <p>Classes Completed</p>
+                            <p>10</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -32,10 +37,10 @@ function Profile(){
              <div className="classes">
                 <Switch>
                     <Route  path="/profile/classes" component={AllClasses}/>
-                    <Route  path="/profile/createclasses" component={createclass}/>
-                    <Route  path="/profile/discussions" component={discussions}/>
-                    <Route  path="/profile/directmessages" component={messages}/>
-                    <Route  path="/profile/myclasses" component={myclasses}/>
+                    <Route  path="/profile/createclasses" component={Createclass}/>
+                    <Route  path="/profile/discussions" component={Discussions}/>
+                    <Route  path="/profile/directmessages" component={Messages}/>
+                    <Route  path="/profile/myclasses" component={Myclasses}/>
                 </Switch>
              </div>
              <Quotes/>
