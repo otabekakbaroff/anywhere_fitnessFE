@@ -12,6 +12,7 @@ function Home(){
                 <div className="anytime"><p>Do It Anywhere</p></div>
             </div>
         </div>
+        
     )
 }
 export default Home;
